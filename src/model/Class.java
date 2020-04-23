@@ -7,6 +7,7 @@ public class Class {
 	private int capacity;
 	private ArrayList<Student> students;
 	private Teacher teacher;
+	//Cambio para practica git en eclipse
 	
 	public Class(String name, ArrayList<Student> students, Teacher teacher) {
 		super();
@@ -19,6 +20,7 @@ public class Class {
 		}
 		this.teacher = teacher;
 	}
+	
 
 	public int getCapacity() {
 		return capacity;

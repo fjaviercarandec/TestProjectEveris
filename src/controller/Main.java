@@ -20,9 +20,9 @@ public class Main {
 		//Alumnos
 		Student s1 = new Student("Javier", "Carande", "111222333A", 1997, subjects);
 		Student s2 = new Student("Abraham", "Barrera", "444555666B", 1998, subjects);
-		Student s3 = new Student("Salvador", "Muñoz", "777888999C", 2000, subjects);
+		Student s3 = new Student("Salvador", "Muï¿½oz", "777888999C", 2000, subjects);
 		Student s4 = new Student("Juan", "Gonzalez", "000999111D", 1997, subjects);
-		//Añado alumnos al array de alumnos
+		//Aï¿½ado alumnos al array de alumnos
 		ArrayList<Student> students = new ArrayList<>();
 		students.add(s1);
 		students.add(s2);
@@ -39,10 +39,12 @@ public class Main {
 		
 		//Pruebo metodos, para ello creo un nuevo alumno
 		Student s5 = new Student("Nombre1", "Apellido1", "dnidnidniA", 2000, subjects);
-		//Añado el alumno s5
+		//Aï¿½ado el alumno s5
 		Helper.addStudent(s5, c1);
+		System.out.println(c1.toString());
 		//Elimino el alumno s4
 		Helper.removeStudent(s4, c1);
+		System.out.println(c1.toString());
 		//Pruebo el metodo ageStudent
 		System.out.println("Edad del alumno s1: " + Helper.ageStudent(s1));
 		System.out.println("Edad del alumno s3: " + Helper.ageStudent(s3));

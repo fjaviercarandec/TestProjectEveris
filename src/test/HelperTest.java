@@ -42,11 +42,14 @@ class HelperTest {
 		ArrayList<Student> students = new ArrayList<>();
 		students.add(s1);
 		Teacher t1 = new Teacher("Test3", "Test3", "111222333A", 2000, "Test3");
-		//Creo la clase y añado un estudiante
+		//Creo una clase con un estudiante
 		Class c1 = new Class("Test3", students, t1);
-		Helper.addStudent(s1, c1);
+		//Elimino el estudiante
+		Helper.removeStudent(s1, c1);
+
 		
-		assertTrue(Helper.removeStudent(s1, c1));
+		assertEquals(0, c1.getStudents().size());
+		
 	}
 
 }

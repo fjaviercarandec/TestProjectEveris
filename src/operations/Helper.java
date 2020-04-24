@@ -15,8 +15,13 @@ public class Helper {
 		}
 	}
 	
-	public static void removeStudent (Student s1, Class c1) {
-		c1.getStudents().remove(s1);
+	public static boolean removeStudent (Student s1, Class c1) {
+		if (c1.getStudents().remove(s1)) {
+			c1.getStudents().remove(s1);
+			return true;
+		} else {
+			return false;
+		}
 	}
 	
 	public static int ageStudent (Student s1) {
